@@ -20,6 +20,7 @@ internal class GrafoPonderado
 
         ValidarVertice(verticeOrigen, verticeDestino);
         _matrizPesos[verticeOrigen, verticeDestino] = peso;
+        _matrizPesos[verticeDestino, verticeOrigen] = peso;
     }
     public int ObtenerPeso(int verticeOrigen, int verticeDestino)
     {
